@@ -1,3 +1,108 @@
 .detail{
     flex: 1;
+    border-left: 1px solid rgba(255,255,255,0.125);
+
+    .user{
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.125);
+
+        p{
+            font-weight: 200;
+            font-size: 14px;
+        }
+    }
+
+
+    .info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .option{
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span{
+                    font-weight: 300;
+                }
+
+                img{
+                   width: 30px;
+                   height: 30px;
+                   background-color: rgba(12, 117, 4, 0.507);
+                   padding: 10px;
+                   border-radius: 50%;
+                   cursor: pointer;
+                }
+            }
+            .photos{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+                max-height: 100px;
+                overflow-y: auto;
+
+                .photoItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photoDetail{
+                        display: flex;
+                        gap:10px;
+                        align-items: center;
+                        img{
+                            width: 40px;
+                            height:auto;
+                            border-radius: 10px;
+                            object-fit: cover;
+                        }
+
+                        span{
+                            font-weight: 300;
+                            font-size: 12px;
+                            color: lightgray;
+                        }
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                    }
+
+                    .icon{
+                        width: 30px;
+                        height: 30px;
+                        background-color: rgba(12, 117, 4, 0.507);
+                        padding: 10px;
+                        border-radius: 10%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    button{
+        padding : 10px 20px;
+        background-color: rgba(230,74,105,0.5);
+        color:white;
+        border:none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgba(230,74,105,0.8);
+        }
+    }
+
+    
 }
