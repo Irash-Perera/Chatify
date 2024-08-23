@@ -24,10 +24,20 @@
 
             .logo{
                 display: flex;
-                align-items: center;
+                flex-direction: column;
 
-                h1{
-                    font-size: 60px
+                .info{
+                    display: flex;
+                    align-items: center;
+                    h1{
+                        font-size: 60px
+                    }
+                }
+                .animation{
+                    display:flex;
+                    position: relative;
+                    margin-bottom: -80px;
+
                 }
             }
 

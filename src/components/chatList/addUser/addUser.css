@@ -1,0 +1,67 @@
+.addUser{
+  padding: 30px;
+  width: max-content;
+  height: max-content;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  margin: auto;
+  background-color: rgba(2, 20, 2, 0.94);
+  position: absolute;
+  border-radius: 12px;
+
+  form{
+    display: flex;
+    gap: 10px;
+
+    input{
+      border: none;
+      outline: none;
+      background-color: rgba(13, 54, 10, 0.50);
+      padding: 10px;
+      border-radius: 12px;
+    }
+
+    button{
+      background-color: rgba(18, 158, 8, 0.8);
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 12px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: rgba(18, 158, 8);
+      }
+    }
+  }
+
+  .user{
+    margin-top: 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+
+    .detail{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    button{
+      background-color: rgba(4, 43, 1, 0.8);
+      border: none;
+      outline: none;
+      padding: 8px;
+      border-radius: 12px;
+      color: aliceblue;
+      cursor: pointer;
+
+      &:hover{
+        background-color: rgba(4, 43, 1);
+      }
+    }
+  }
+
+}

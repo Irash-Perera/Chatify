@@ -1,6 +1,7 @@
 import { toast } from "react-toastify"
 import "./login.css"
 import { useState } from "react"
+import { DotLottiePlayer } from "@dotlottie/player-component"
 
 const Login = () => {
     const [avatar, setAvatar] = useState({
@@ -27,8 +28,20 @@ const Login = () => {
             <div className="login">
                 <div className="seperator">
                     <div className="logo">
-                        <h1>Chatify</h1>
-                        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/White%20Circle.png" alt="White Circle" width="50" height="50" />
+                        <div className="animation">
+                        <dotlottie-player 
+                            src="https://lottie.host/bb4fee33-8fa9-480f-a252-e9b6bf2dd645/bPSFp8Elqv.json"
+                            background="transparent"
+                            speed="1"
+                            style={{ width: "200px", height: "200px" }}
+                            loop
+                            autoplay
+                        ></dotlottie-player>
+                        </div>
+                        <div className="info">
+                            <h1>Chatify</h1>
+                            <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/White%20Circle.png" alt="White Circle" width="50" height="50" />
+                        </div>
                     </div>
                     <p>Connect easy. Connect fast.</p>
                 </div>

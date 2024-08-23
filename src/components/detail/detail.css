@@ -90,6 +90,20 @@
                 }
             }
         }
+        .btns{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+
+            .logout-btn{
+                background-color: rgba(65, 105, 225, 0.668);
+
+                &:hover{
+                    background-color: rgba(65, 105, 225);
+                }
+            }
+
+        }
     }
     button{
         padding : 10px 20px;
